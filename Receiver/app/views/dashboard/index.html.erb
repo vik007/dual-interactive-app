@@ -1,0 +1,32 @@
+<h1>Email: <%= current_user.email %></h1>
+<h1>Role: <%= current_user.role.to_s.titleize %></h1>
+<hr>
+<p> <%= link_to 'Student', students_path %></p>
+
+<h6>
+API: fetch name, city, age, sex
+</h6>
+<code>
+curl --location --request GET 'http://localhost:3000/api/v1/student/1'
+curl --location --request GET 'http://localhost:3000/api/v1/student/2'
+</code>
+<hr>
+
+
+<h6>
+API: fetch city, sex
+</h6>
+<code>
+curl --location --request GET 'http://localhost:3000/api/v1/student/1/info'
+curl --location --request GET 'http://localhost:3000/api/v1/student/2/info'
+</code>
+
+<hr>
+
+<h6>
+API: fetch name, age
+</h6>
+<code>
+curl --location --request GET 'http://localhost:3000/api/v1/student/1/other_info'
+curl --location --request GET 'http://localhost:3000/api/v1/student/2/other_info'
+</code>

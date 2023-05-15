@@ -1,0 +1,8 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  pool: 15
+  username: root
+  host: 127.0.0.1
+  password:
+  database: designations_dev
